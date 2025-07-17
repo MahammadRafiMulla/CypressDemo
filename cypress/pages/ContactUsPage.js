@@ -1,6 +1,6 @@
 class ContactUsPage {
   static verifyGetInTouchVisible() {
-    cy.contains('GET IN TOUCH', { timeout: 10000 }).should('be.visible');
+    cy.contains('Get In Touch', { timeout: 10000 }).should('be.visible');
   }
 
   static fillContactForm(name, email, subject, message) {
