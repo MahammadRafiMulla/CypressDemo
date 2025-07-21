@@ -95,3 +95,13 @@ Cypress.Commands.add('logoutUser', () => {
   cy.contains('Logout').click();
   cy.url().should('include', '/login');
 });
+
+Cypress.Commands.add('searchProduct', (productName) => {
+  cy.get('#search_product').type(productName);
+  cy.get('#submit_search').click();
+});
+
+Cypress.Commands.add('subscribe', (email) => {
+  cy.get('#susbscribe_email').type(email)
+  cy.get('#subscribe').click()
+})
